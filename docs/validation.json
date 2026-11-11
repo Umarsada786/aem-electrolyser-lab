@@ -1,0 +1,82 @@
+{
+  "split": "First 70% active rows for calibration; final 30% chronological holdout. No refit on holdout.",
+  "total_rows": 386,
+  "excluded_zero_current_rows": 1,
+  "train_n": 269,
+  "test_n": 116,
+  "train_last_time_s": 8070.0,
+  "test_first_time_s": 8100.0,
+  "parameters": {
+    "activation_v": 0.027787994362865633,
+    "exchange_a_cm2": 1.000000000000009e-08,
+    "resistance_ohm_cm2": 0.07009191923186757,
+    "temperature_coefficient_v_k": -0.002362031445760368,
+    "effective_area_cells_cm2": 1463.1955180686318,
+    "faradaic_efficiency": 1
+  },
+  "diagnostics": {
+    "optimizer_success": true,
+    "jacobian_condition_number": 115031.22211887821,
+    "unconstrained_faradaic_efficiency": 1.0025853912440474
+  },
+  "calibration": {
+    "voltage_v": {
+      "rmse": 0.01593581631251097,
+      "mae": 0.009982642821200703,
+      "bias": -0.00011638247149003389,
+      "r2": 0.7638325586504153,
+      "max_abs_error": 0.11317266952726013
+    },
+    "power_kw": {
+      "rmse": 0.01031973087266846,
+      "mae": 0.008400920618179828,
+      "bias": -9.035786892442438e-07,
+      "r2": 0.9996270462955267,
+      "max_abs_error": 0.027910008189522495
+    },
+    "hydrogen_nm3_h": {
+      "rmse": 0.0011174895933575815,
+      "mae": 0.0010736463704610368,
+      "bias": -0.0010736463704610368,
+      "r2": 0.9999135481694097,
+      "max_abs_error": 0.0013236759670643972
+    }
+  },
+  "holdout": {
+    "voltage_v": {
+      "rmse": 0.029789424093257764,
+      "mae": 0.025497617543873214,
+      "bias": 0.017389178754757876,
+      "r2": 0.3425693756007019,
+      "max_abs_error": 0.05292626411352175
+    },
+    "power_kw": {
+      "rmse": 0.02474177633224436,
+      "mae": 0.02211498796708822,
+      "bias": 0.01254296832227046,
+      "r2": 0.9940193368797294,
+      "max_abs_error": 0.03889457579132771
+    },
+    "hydrogen_nm3_h": {
+      "rmse": 0.0010327969084578388,
+      "mae": 0.001018313988040725,
+      "bias": -0.001018313988040725,
+      "r2": 0.9997610963505665,
+      "max_abs_error": 0.001321089322531055
+    }
+  },
+  "domain": {
+    "current_density_a_cm2": [
+      0.06143,
+      0.83583
+    ],
+    "temperature_c": [
+      20.703,
+      55.115
+    ],
+    "pressure_bar": [
+      1.0,
+      33.964
+    ]
+  }
+}

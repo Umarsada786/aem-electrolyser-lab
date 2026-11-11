@@ -1,0 +1,16 @@
+{
+  "source": "Supplementary data (2)(3).xlsx",
+  "sha256": "a461738874bf87403928aa919354ad2c8fa2e66a779431ddfe72f22e98983ef7",
+  "sheet": "Exp",
+  "columns": {
+    "B": "time",
+    "E": "temperature",
+    "H": "hydrogen",
+    "K": "current density",
+    "N": "cell voltage",
+    "Q": "stack power",
+    "T": "pressure MPa; multiplied by 10 to bar"
+  },
+  "rows": 386,
+  "other_sheets": "Not used for fitting or independent validation; Sim contains existing simulations. Energy balances uses a different aggregate scale; not assumed to be the same stack."
+}
